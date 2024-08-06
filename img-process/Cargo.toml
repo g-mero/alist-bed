@@ -1,0 +1,10 @@
+[package]
+name = "img-process"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+webp = "0.3"
+image = "0.25"
+anyhow = "1"

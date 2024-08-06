@@ -1,0 +1,13 @@
+[package]
+name = "alist-bed"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+members = [".", "api", "img-process", "config", "alist-api", "cache"]
+
+[dependencies]
+api = { path = "./api" }
+tokio = { version = "1", features = ["macros"] }
+mimalloc = "0.1"

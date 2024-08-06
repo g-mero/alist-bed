@@ -1,0 +1,9 @@
+[package]
+name = "cache"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+quick_cache = "0.6"
+anyhow = "1"

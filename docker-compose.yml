@@ -1,0 +1,13 @@
+version: '3'
+services:
+  rust-imgbed:
+    container_name: rust-imgbed
+    image: gmeroo/rust-imgbed:latest
+    ports:
+      - "3201:5800"
+    restart: on-failure
+    environment:
+      - API_KEY=yourkey
+      - ALIST_HOST=https://pan.gmero.com
+      - ALIST_TOKEN=alist-d7e33330-03ec-4598-8cb3-4a461731909fBcrWpMQcqsMTs3TTq3OPMIjyBU2tDWyFbgt1WwNz2VQ1OBx2V1vol3e3JeOY4ngA
+      - ALIST_DIR=/onedrive/pics
